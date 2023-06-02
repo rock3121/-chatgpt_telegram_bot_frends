@@ -10,7 +10,7 @@ MODEL_NAME = 'text-davinci-003'
 # обработчик команды /start
 @bot.message_handler(commands=['start'])
 def start_handler(message):
-    bot.reply_to(message, 'Здравствуйте! Я бот, готовый помочь вам. Напишите мне, чтобы начать диалог.')
+    bot.reply_to(message, 'Здравствуйте!')
 
 # общий обработчик сообщений
 @bot.message_handler(func=lambda message: True)
